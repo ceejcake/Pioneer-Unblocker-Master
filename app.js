@@ -13,7 +13,7 @@ var url = require('url');
 
 // DELETE
 
-// var querystring = require('querystring');
+var querystring = require('querystring');
 var express = require('express');
 var unblocker = require('unblocker');
 var Transform = require('stream').Transform;
@@ -24,7 +24,7 @@ var google_analytics_id = process.env.GA_ID || null;
 
 // DELETE
 
-// function addGa(html) {
+ function addGa(html) {
    if (google_analytics_id) {
         var ga = [
             "<script type=\"text/javascript\">",
@@ -57,7 +57,7 @@ function googleAnalyticsMiddleware(data) {
     }
 }
 // DELETE
-//  var unblockerConfig = {
+var unblockerConfig = {
     prefix: '/proxy/',
     responseMiddleware: [
         googleAnalyticsMiddleware
