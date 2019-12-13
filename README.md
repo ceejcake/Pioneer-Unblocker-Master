@@ -6,7 +6,7 @@ The original nodeunblocker.com is now gone, but it's now easier than ever to dep
 
 copy.
 
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/ceejcake/Pioneer-Unblocker)
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/ceejcake/Pioneer-Unblocker-Master)
 
 
 
