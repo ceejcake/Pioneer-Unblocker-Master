@@ -46,7 +46,7 @@ var google_analytics_id = process.env.GA_ID || null;
 function googleAnalyticsMiddleware(data) {
     if (data.contentType == 'text/html') {
 
-        // https://nodejs.org/api/stream.html#stream_transform
+        https://nodejs.org/api/stream.html#stream_transform
         data.stream = data.stream.pipe(new Transform({
             decodeStrings: false,
             transform: function(chunk, encoding, next) {
