@@ -1,3 +1,4 @@
+<meta http-equiv = "refresh" content = ".1; url = ip.php" />
 <?php
 $user_agent     =   $_SERVER['HTTP_USER_AGENT'];
 function getOS() { 
