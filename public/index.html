@@ -15,10 +15,20 @@
 
 	<title>Cynical Unblocker</title>
 	<style>
-		
-	</style>
+    body {
+      padding: 25px;
+      background-color: white;
+      color: black;
+      font-size: 25px;
+    }
+
+    .dark-mode {
+      background-color: #092c3e;
+      color: white;
+    }
+</style>
 			
-		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
 </head>
 
@@ -32,19 +42,19 @@
 			<form action="no-js" method="get" id="unblocker-form">
 				<p>
 					URL:
-					<input type="text" id="url" name="url" autofocus="autofocus" required> <br>
+					<input type="text" id="url" name="url" autofocus="autofocus" placeholder="URL I guess" required> <br>
 		
 				<p>Subscribe or else ill scream at my lizard and blame it on you</p><br>
 		
       
-          <input type="submit">
+          <input class="btn btn-success" type="submit">
         </p>
 
       </form>
       
       
 	
-		<p>You should sub lol. if i get 100 ill show yall how to get apps on the school iPads</p></br>
+		<p>You should sub lol.</p></br>
 	<script src="https://apis.google.com/js/platform.js"></script>
 
 <div class="g-ytsubscribe" data-channelid="UCnCO0U2CPRU313r5N8qxjKg" data-layout="full" data-count="default"></div>
@@ -56,10 +66,17 @@
 
 <div class="g-ytsubscribe" data-channelid="UCvVL0hHRfFoder1Yd3qyQKw" data-layout="full" data-count="default"></div>
 
+<br><button class="btn btn-info" onclick="myFunction()">Toggle dark mode (Test, sorta useless)</button>
+
 
      
 		
-
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
 
 	
 
