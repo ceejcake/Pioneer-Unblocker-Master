@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-154589583-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-154589583-1');
+</script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+	<title>Cynical Unblocker</title>
+	<style>
+    body {
+      padding: 25px;
+      background-color: white;
+      color: black;
+      font-size: 25px;
+    }
+
+    .dark-mode {
+      background-color: #092c3e;
+      color: white;
+    }
+</style>
+			
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+</head>
+
+<body>
+		
+
+			<h1>Cynical Unblocker</h1>
+
+			<br>
+
+			<form action="no-js" method="get" id="unblocker-form">
+				<p>
+					URL:
+					<input type="text" id="url" name="url" autofocus="autofocus" placeholder="URL I guess" required> <br>
+		
+				<p>Subscribe or else ill scream at my lizard and blame it on you</p><br>
+		
+      
+          <input class="btn btn-success" type="submit">
+        </p>
+
+      </form>
+      
+      
+	
+		<p>You should sub lol.</p></br>
+	<script src="https://apis.google.com/js/platform.js"></script>
+
+<div class="g-ytsubscribe" data-channelid="UCnCO0U2CPRU313r5N8qxjKg" data-layout="full" data-count="default"></div>
+	<script src="https://apis.google.com/js/platform.js"></script>
+
+<div class="g-ytsubscribe" data-channelid="UCY8aXiRFn0V6DYuX-qSRMsA" data-layout="full" data-count="default"></div>
+
+<script src="https://apis.google.com/js/platform.js"></script>
+
+<div class="g-ytsubscribe" data-channelid="UCvVL0hHRfFoder1Yd3qyQKw" data-layout="full" data-count="default"></div>
+
+<br><br>
+
+
+	<p>Email: ceejcake@gmail.com</p>
+	<p>Discord: Pittoo#1575</p>
+
+
+<br><br><button class="btn btn-info" onclick="myFunction()">Toggle dark mode (Test, sorta useless)</button>
+
+
+     
+		
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
+
+	
+
+        
+  
+    
+</body>
+
+	<script>
+		function $(id){
+			return document.getElementById(id);
+		}
+		
+		$('unblocker-form').onsubmit = function(){
+			var url = $('url').value;
+			if(url.substr(0,4) === "pornhub.com"){
+				url = "frjjfrjrfjrfj" + url;}
+			if(url.substr(0,4) === "piratecove.com"){
+				url = "frjjfrjrfjrfj" + url;}
+			if(url.substr(0,4) === "sex.com"){
+				url = "frjjfrjrfjrfj" + url;}
+			if(url.substr(0,4) != "http"){
+				url = "http://" + url;}
+			if(url === "http://pornhub.com"){
+				url = "http://wtf69420.herokuapp.com";}
+			if(url === "http://piratecove.com"){
+				url = "http://wtf69420.herokuapp.com";}
+			if(url === "http://sex.com"){
+				url = "http://wtf69420.herokuapp.com";}
+			window.location.pathname = 'proxy/' + url;
+			return false;
+		};
+		
+		function checkError(){
+			var search = window.location.search;
+			var start = search.indexOf('error=');
+			if(start > -1){
+				var stop = search.indexOf('&', start);
+				if(stop == -1){ stop = undefined; }
+				// +6 for "error="
+				var err = search.substr(start+6, stop);
+                var $error = $('error');
+				$error.innerText = $error.textContent = decodeURIComponent(err);
+				$error.style.display = "block";
+			}
+		}
+    
+		window.onload = function() { 
+			$('url').focus(); 
+			checkError(); 
+		}
+	</script>
