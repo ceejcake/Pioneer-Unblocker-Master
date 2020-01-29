@@ -70,14 +70,14 @@ var unblockerConfig = {
 app.use(unblocker(unblockerConfig));
 
 // serve up static files *after* the proxy is run
-app.use('/', express.static(__dirname + '/docs'));
+app.use('/Pioneer-Unblocker-Master', express.static(__dirname + '/docs'));
 
 // this is for users who's form actually submitted due to JS being disabled or whatever
 app.get("/no-js", function(req, res) {
     // grab the "url" parameter from the querystring
     var site = querystring.parse(url.parse(req.url).query).url;
     // and redirect the user to /proxy/url
-    res.redirect('/Pioneer-Unblocker-Master' + unblockerConfig.prefix + site);
+    res.redirect(unblockerConfig.prefix + site);
 });
 
 // for compatibility with gatlin and other servers, export the app rather than passing it directly to http.createServer
