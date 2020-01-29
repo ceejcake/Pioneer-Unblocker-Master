@@ -58,7 +58,7 @@ function googleAnalyticsMiddleware(data) {
 }
 // DELETE
 var unblockerConfig = {
-    prefix: '/proxy/',
+    prefix: '/Pioneer-Unblocker-Master/proxy/',
     responseMiddleware: [
         googleAnalyticsMiddleware
     ]
