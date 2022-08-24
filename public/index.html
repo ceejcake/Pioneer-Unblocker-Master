@@ -2,147 +2,251 @@
 <html>
 
 <head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-154589583-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-154589583-1');
-</script>
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-	<title>Cynical Unblocker</title>
-	<style>
-    body {
-      padding: 25px;
-      background-color: white;
-      color: black;
-      font-size: 25px;
-    }
+    <title>Gameboy Advanced</title>
 
-    .dark-mode {
-      background-color: #092c3e;
-      color: white;
-    }
-</style>
-			
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style2.css">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="file:///Users/cj/Downloads/favicon.ico" type="image/x-icon">
+<link rel="icon" href="file:///Users/cj/Downloads/favicon.ico" type="image/x-icon">
 
 </head>
 
 <body>
-		
 
-			<h1>Cynical Unblocker</h1>
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Menu</h3>
+            </div>
 
-			<br>
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="unblocker.html">Unblocker</a>
+                </li>
+                <li>
+                    <li>
+                    <a href="https://ceejcake.github.io/gba/gba/">Gameboy</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+                <li>
+                    <a href="test.html">Testing</a>
+                </li>
+            </ul>
 
-			<form action="no-js" method="get" id="unblocker-form">
-				<p>
-					URL:
-					<input type="text" id="url" name="url" autofocus="autofocus" placeholder="URL I guess" required> <br>
-		
-				<p>Subscribe or else ill scream at my lizard and blame it on you</p><br>
-		
-      
-          <input class="btn btn-success" type="submit">
-        </p>
+            <ul class="list-unstyled CTAs">
+                <li>
+                    <a href="https://www.youtube.com/channel/UCnCO0U2CPRU313r5N8qxjKg" class="download">Youtube</a>
+                </li>
+                
+            </ul>
+        </nav>
 
-      </form>
-      
-      
-	
-		<p>You should sub lol.</p></br>
-	<script src="https://apis.google.com/js/platform.js"></script>
+        <!-- Page Content  -->
+        <div id="content">
 
-<div class="g-ytsubscribe" data-channelid="UCnCO0U2CPRU313r5N8qxjKg" data-layout="full" data-count="default"></div>
-	<script src="https://apis.google.com/js/platform.js"></script>
+           
 
-<div class="g-ytsubscribe" data-channelid="UCY8aXiRFn0V6DYuX-qSRMsA" data-layout="full" data-count="default"></div>
+                    <button type="button" id="sidebarCollapse" class="btn btn-info float-right">
 
-<script src="https://apis.google.com/js/platform.js"></script>
+                        <span>Toggle Sidebar</span>
+                    </button>
 
-<div class="g-ytsubscribe" data-channelid="UCvVL0hHRfFoder1Yd3qyQKw" data-layout="full" data-count="default"></div>
+                    <h2>Gameboy Advanced (PC Only)</h2>
+                    <div class="line"></div>
 
-<br><br>
+                    <button class="btn btn-info" data-toggle="collapse" data-target="#demo">Controls</button>
 
+<div id="demo" class="collapse">
+<ul>
+                                    <li id="key_a">
+                                        <span>A: A</span>
+                                    </li>
+                                    <li id="key_b">
+                                        <span>B: B</span>
+                                    </li>
+                                    <li id="key_l">
+                                        <span>L: L</span>
+                                    </li>
+                                    <li id="key_r">
+                                        <span>R: R</span>
+                                    </li>
+                                    <li id="key_start">
+                                        <span>Start: Enter</span>
+                                    </li>
+                                    <li id="key_select">
+                                        <span>Select: X</span>
+                                    </li>
+                                    <li id="key_up">
+                                        <span>Up: ↑</span>
+                                    </li>
+                                    <li id="key_down">
+                                        <span>Down: ↓</span>
+                                    </li>
+                                    <li id="key_left">
+                                        <span>Left: ←</span>
+                                    </li>
+                                    <li id="key_right">
+                                        <span>Right: →</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            
 
-	<p>Email: ceejcake@gmail.com</p>
-	<p>Discord: Wolfs#3569</p>
+</div>
+<br><br><h3>Click a game!</h3>
+                  
+       <ul>
+       	<li><a href="https://ceejcake.github.io/gba/gba/launcher.html#pokemonlightplat">Pokemon Light Platinum</a>
+       	</li>
+       	<li><a href="https://ceejcake.github.io/gba/gba/launcher.html#pokemondarkviolet">Pokemon Dark Violet</a>
+       	</li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#pokemonglaze">Pokemon Glazed</a>
+           </li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#advancewars">Advance Wars</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#advancewars2">Advance Wars 2</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#advancewars2">Aladdin</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#alienhominid">Alien Hominid</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#bomberman_max2blue">Bomberman Max 2 - Blue Advance</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#bomberman_tournament">Bomberman Tournament</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#bubblebobble">Bubble Bobble: Old and New</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#croket1">Croket! - Yume no Banker Survival!</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#croket2">Croket! 2 - Yami no Bank to Banqueen</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#croket3">Croket! 3 - Granu Oukoku no Nazo</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#croket4">Croket! 4 - Bank no Mori no Mamorigami</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#digimon_racing">Digimon Racing</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#dbz_supersonic">Dragon Ball Z - Supersonic Warriors</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#drilldozer">Drill Dozer</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#earthwormjim">Earthworm Jim</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#earthwormjim2">Earthworm Jim 2</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#ff1and2">Final Fantasy 1 &amp; 2 Advance</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#ff4S ">Final Fantasy IV Advance (Sound Restoration Mod)</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#final_fantasy_tactics">Final Fantasy VI Advance</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#final_fantasy_tactics">Final Fantasy Tactics Advance</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#fire_emblem">Fire Emblem</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#frogger1">Frogger Advance - The Great Quest</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#frogger2">Frogger's Adventures - Temple of the Frog</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#frogger3">Frogger's Adventures 2 - The Lost Wand</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#fzero_gp">F-Zero - GP Legend</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#fzero_max">F-Zero - Maximum Velocity</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#gamewatch4">Game &amp; Watch Gallery 4</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#goldensun">Golden Sun</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#gunstar_super_heroes">Gunstar Super Heroes</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#hamtaro_heartbreak">Hamtaro - Ham-Ham Heartbreak</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#kirbymirror">Kirby &amp; The Amazing Mirror</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#kirbynightmare">Kirby: Nightmare in Dreamland</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#superstar">Mario &amp; Luigi: Superstar Saga</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#mariokart">Mario Kart: Super Circuit</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#marioparty">Mario Party Advance</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#mariopinball">Mario Pinball Land</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#megamanbass">Megaman &amp; Bass</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#megaman_battle1">Megaman Battle Network 1</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#megaman_battle2">Megaman Battle Network 2</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#megaman_battle3_blue">Megaman Battle Network 3 Blue</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#megaman_battle4_blue">Megaman Battle Network 4 Blue Moon</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#megaman_battle4_red">Megaman Battle Network 4 Red Sun</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#megaman_battle5">Megaman Battle Network 5 Team Protoman</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#megaman_battle6">Megaman Battle Network 6 Cybeast Falzar</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#megaman_zero1">Megaman Zero</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#megaman_zero2">Megaman Zero 2</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#megaman_zero3">Megaman Zero 3</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#megaman_zero4">Megaman Zero 4</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#metalslug">Metal Slug Advance</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#metroid_fusion">Metriod Fusion</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#momotarou_dentetsu">Momotarou Dentetsu G Gold Deck wo Tsukure!</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#monopoly">Monopoly</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#monster_force">Monster Force</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#mortal_kombat">Mortal Kombat Advance</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#pacman_world">Pacman World</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#pacman_world2">Pacman World 2</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#pokemonemerald">Pokemon Emerald</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#pokemongreen">Pokemon Leaf Green</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#pokemonred">Pokemon Fire Red</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#mysteryred">Pokemon Mystery Dungeon Red</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#pokemonruby">Pokemon Ruby</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#pokemonsapphire">Pokemon Sapphire</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#gba_video_pokemon_1">Pokemon Video Show Pak 1</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#gba_video_pokemon_2">Pokemon Video Show Pak 2</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#gba_video_pokemon_3">Pokemon Video Show Pak 3</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#gba_video_pokemon_4">Pokemon Video Show Pak 4</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#sonic_advance">Sonic Advance</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#sonic_advance2">Sonic Advance 2</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#sonic_advance3">Sonic Advance 3</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#sonicbattle">Sonic Battle</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#sonicpinball">Sonic Pinball</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#spyro_adventure">Spyro Adventure</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#spyro_ice">Spyro: Season of Ice</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#spyro_flame">Spyro 2: Season of Flame</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#supermarioadvance">Super Mario Advance</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#supermarioadvance2">Super Mario Advance 2</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#supermarioadvance3">Super Mario Advance 3</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#supermarioadvance4">Super Mario Advance 4</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#supermonkeyballjr">Super Monkey Ball Jr</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#super_street_fighter_2_turbo_revival">Super Street Fighter II: Turbo Revival</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#super_street_fighter_3_alpha">Super Street Fighter III: Alpha</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#tales_of_phantasia">Tales of Phantasia</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#tak2_staff_of_dreams">Tak 2: The Staff of Dreams</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#tmnt">Teenage Mutant Ninja Turtles</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#tetris_worlds">Tetris Worlds</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#sims_bustin_out">The Sims: Bustin ' Out</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#sims2">The Sims 2</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#simpsons">The Simpsons: Road Rage</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#turok_evolution">Turok Evolution</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#warioland4">Wario Land 4</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#wario_ware">Wario Ware Inc</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#zelda_past">The Legend of Zelda: A Link to the Past</a></li>
+           <li><a href="https://ceejcake.github.io/gba/gba/launcher.html#zelda_minish ">The Legend of Zelda: The Minish Cap</a></li>
 
+                    
+                     
 
-<br><br><button class="btn btn-info" onclick="myFunction()">Toggle dark mode (Test, sorta useless)</button>
+                    
+               
 
+            
+    </div>
 
-     
-		
-<script>
-function myFunction() {
-   var element = document.body;
-   element.classList.toggle("dark-mode");
-}
-</script>
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
 
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#sidebar").mCustomScrollbar({
+                theme: "minimal"
+            });
 
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="/__/firebase/7.7.0/firebase-app.js"></script>
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="/__/firebase/7.7.0/firebase-analytics.js"></script>
-
-<!-- Initialize Firebase -->
-<script src="/__/firebase/init.js"></script>
-	
-
-        
-  
-    
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar, #content').toggleClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
+    </script>
 </body>
 
-	<script>
-		function $(id){
-			return document.getElementById(id);
-		}
-		
-		$('unblocker-form').onsubmit = function(){
-			var url = $('url').value;
-			if(url.substr(0,4) === "pornhub.com"){
-				url = "frjjfrjrfjrfj" + url;}
-			if(url.substr(0,4) === "piratecove.com"){
-				url = "frjjfrjrfjrfj" + url;}
-			if(url.substr(0,4) === "sex.com"){
-				url = "frjjfrjrfjrfj" + url;}
-			if(url.substr(0,4) != "http"){
-				url = "http://" + url;}
-			if(url === "http://pornhub.com"){
-				url = "http://wtf69420.herokuapp.com";}
-			if(url === "http://piratecove.com"){
-				url = "http://wtf69420.herokuapp.com";}
-			if(url === "http://sex.com"){
-				url = "http://wtf69420.herokuapp.com";}
-			window.location.pathname = 'proxy/' + url;
-			return false;
-		};
-		
-		function checkError(){
-			var search = window.location.search;
-			var start = search.indexOf('error=');
-			if(start > -1){
-				var stop = search.indexOf('&', start);
-				if(stop == -1){ stop = undefined; }
-				// +6 for "error="
-				var err = search.substr(start+6, stop);
-                var $error = $('error');
-				$error.innerText = $error.textContent = decodeURIComponent(err);
-				$error.style.display = "block";
-			}
-		}
-    
-		window.onload = function() { 
-			$('url').focus(); 
-			checkError(); 
-		}
-	</script>
+</html>
